@@ -6,5 +6,5 @@ The Using Godot for UI repository contains the source code that accompanies the 
 
 The repository has branches for each of the pertinent sections of the article describing this code. Those branches are:
 
-* Setting Up * _setting-up_
-
+*Setting Up* _setting-up_
+*Simple UI* _simple-ui_
