@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1p3xg8gkdehl"]
+
+[ext_resource type="Texture2D" uid="uid://drpqgw1ls7tl4" path="res://assets/windowclose.svg" id="1_gvmju"]
+[ext_resource type="Script" path="res://scripts/window_close.cs" id="2_xj0x4"]
+
+[node name="WindowClose" type="TextureButton"]
+self_modulate = Color(0.854902, 0, 0.160784, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_gvmju")
+script = ExtResource("2_xj0x4")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b84xmpt6imssb"]
+
+[ext_resource type="Texture2D" uid="uid://emfbpobc7ox6" path="res://assets/windowmove.svg" id="1_dof3m"]
+[ext_resource type="Script" path="res://scripts/window_move.cs" id="2_u7uu4"]
+
+[node name="WindowMove" type="TextureButton"]
+self_modulate = Color(0.184314, 0.239216, 1, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_dof3m")
+script = ExtResource("2_u7uu4")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

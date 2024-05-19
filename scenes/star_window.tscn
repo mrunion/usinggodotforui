@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://bb1eqnose7od8"]
+
+[ext_resource type="Texture2D" uid="uid://cu25isy88udvs" path="res://assets/starwindow.svg" id="1_idccn"]
+[ext_resource type="PackedScene" uid="uid://c1p3xg8gkdehl" path="res://scenes/window_close.tscn" id="2_cooaa"]
+[ext_resource type="PackedScene" uid="uid://b84xmpt6imssb" path="res://scenes/window_move.tscn" id="3_ful3w"]
+
+[node name="StarWindow" type="Node2D"]
+
+[node name="Starwindow" type="Sprite2D" parent="."]
+self_modulate = Color(0.461476, 0.720185, 0.172647, 1)
+position = Vector2(584, 319)
+texture = ExtResource("1_idccn")
+
+[node name="WindowClose" parent="." instance=ExtResource("2_cooaa")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 744.0
+offset_top = 246.0
+offset_right = 807.0
+offset_bottom = 309.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="WindowMove" parent="." instance=ExtResource("3_ful3w")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 359.0
+offset_top = 247.0
+offset_right = 422.0
+offset_bottom = 310.0
+grow_horizontal = 1
+grow_vertical = 1
