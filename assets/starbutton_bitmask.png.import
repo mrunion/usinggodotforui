@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cyvridud1vdec"
+path="res://.godot/imported/starbutton_bitmask.png-2043e94fb46e7e3698f733dc35c6bf70.res"
+
+[deps]
+
+source_file="res://assets/starbutton_bitmask.png"
+dest_files=["res://.godot/imported/starbutton_bitmask.png-2043e94fb46e7e3698f733dc35c6bf70.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

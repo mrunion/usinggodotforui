@@ -1,0 +1,29 @@
+[gd_scene load_steps=8 format=3 uid="uid://dlugyk41koxvk"]
+
+[ext_resource type="Texture2D" uid="uid://bplpwko0pngli" path="res://assets/starbutton_normal.svg" id="1_rc7wt"]
+[ext_resource type="Texture2D" uid="uid://bsuedodoplys5" path="res://assets/starbutton_pressed.svg" id="2_p4og5"]
+[ext_resource type="Texture2D" uid="uid://dgtsqiuyfgscp" path="res://assets/starbutton_hover.svg" id="3_eb8ki"]
+[ext_resource type="Texture2D" uid="uid://dvbii3sen8k6c" path="res://assets/starbutton_disabled.svg" id="4_wjbnw"]
+[ext_resource type="Texture2D" uid="uid://dwecx10q5shhk" path="res://assets/starbutton_focused.svg" id="5_6v6lu"]
+[ext_resource type="Script" path="res://scripts/star_button.cs" id="6_ckucg"]
+
+[sub_resource type="BitMap" id="BitMap_gekpc"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 126, 0, 0, 0, 0, 0, 0, 0, 0, 126, 0, 0, 0, 0, 0, 0, 0, 0, 126, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 128, 255, 1, 0, 0, 0, 0, 0, 0, 128, 255, 1, 0, 0, 0, 0, 0, 0, 128, 255, 1, 0, 0, 0, 0, 0, 0, 192, 255, 3, 0, 0, 0, 0, 0, 0, 192, 255, 3, 0, 0, 0, 0, 0, 0, 192, 255, 3, 0, 0, 0, 0, 0, 0, 224, 255, 7, 0, 0, 0, 0, 0, 0, 224, 255, 7, 0, 0, 0, 0, 0, 0, 224, 255, 7, 0, 0, 0, 0, 0, 0, 240, 255, 15, 0, 0, 0, 0, 0, 0, 240, 255, 15, 0, 0, 0, 252, 255, 255, 255, 255, 255, 255, 255, 63, 248, 255, 255, 255, 255, 255, 255, 255, 31, 240, 255, 255, 255, 255, 255, 255, 255, 15, 192, 255, 255, 255, 255, 255, 255, 255, 3, 128, 255, 255, 255, 255, 255, 255, 255, 1, 0, 255, 255, 255, 255, 255, 255, 255, 0, 0, 252, 255, 255, 255, 255, 255, 63, 0, 0, 248, 255, 255, 255, 255, 255, 31, 0, 0, 224, 255, 255, 255, 255, 255, 7, 0, 0, 192, 255, 255, 255, 255, 255, 3, 0, 0, 128, 255, 255, 255, 255, 255, 1, 0, 0, 0, 254, 255, 255, 255, 127, 0, 0, 0, 0, 252, 255, 255, 255, 63, 0, 0, 0, 0, 248, 255, 255, 255, 31, 0, 0, 0, 0, 224, 255, 255, 255, 7, 0, 0, 0, 0, 192, 255, 255, 255, 3, 0, 0, 0, 0, 128, 255, 255, 255, 1, 0, 0, 0, 0, 192, 255, 255, 255, 3, 0, 0, 0, 0, 192, 255, 255, 255, 3, 0, 0, 0, 0, 192, 255, 255, 255, 3, 0, 0, 0, 0, 224, 255, 255, 255, 7, 0, 0, 0, 0, 224, 255, 255, 255, 7, 0, 0, 0, 0, 224, 255, 255, 255, 7, 0, 0, 0, 0, 240, 255, 255, 255, 15, 0, 0, 0, 0, 240, 255, 255, 255, 15, 0, 0, 0, 0, 240, 255, 255, 255, 15, 0, 0, 0, 0, 248, 255, 231, 255, 31, 0, 0, 0, 0, 248, 255, 129, 255, 31, 0, 0, 0, 0, 248, 255, 0, 255, 31, 0, 0, 0, 0, 252, 63, 0, 252, 63, 0, 0, 0, 0, 252, 31, 0, 248, 63, 0, 0, 0, 0, 252, 15, 0, 240, 63, 0, 0, 0, 0, 254, 3, 0, 192, 127, 0, 0, 0, 0, 254, 1, 0, 128, 127, 0, 0, 0, 0, 126, 0, 0, 0, 126, 0, 0, 0, 0, 63, 0, 0, 0, 252, 0, 0, 0, 0, 31, 0, 0, 0, 248, 0, 0, 0, 0, 7, 0, 0, 0, 224, 0, 0, 0, 128, 3, 0, 0, 0, 192, 1, 0, 0, 128, 1, 0, 0, 0, 128, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"size": Vector2i(72, 68)
+}
+
+[node name="StarButton" type="TextureButton"]
+self_modulate = Color(0.396078, 0.74902, 0.815686, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_rc7wt")
+texture_pressed = ExtResource("2_p4og5")
+texture_hover = ExtResource("3_eb8ki")
+texture_disabled = ExtResource("4_wjbnw")
+texture_focused = ExtResource("5_6v6lu")
+texture_click_mask = SubResource("BitMap_gekpc")
+script = ExtResource("6_ckucg")
