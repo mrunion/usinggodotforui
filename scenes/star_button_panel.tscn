@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcycn8yivc24i"]
+
+[ext_resource type="PackedScene" uid="uid://dlugyk41koxvk" path="res://scenes/star_button.tscn" id="1_72umd"]
+
+[node name="Star Button Panel" type="Control"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 3
+anchors_preset = 0
+
+[node name="StarButton" parent="." instance=ExtResource("1_72umd")]
+layout_mode = 0
+anchors_preset = 0
+
+[node name="StarButton2" parent="." instance=ExtResource("1_72umd")]
+layout_mode = 1
+offset_left = 52.0
+offset_top = 17.0
+offset_right = 52.0
+offset_bottom = 17.0
+
+[node name="StarButton3" parent="." instance=ExtResource("1_72umd")]
+layout_mode = 1
+offset_left = 104.0
+offset_top = 2.0
+offset_right = 104.0
+offset_bottom = 2.0

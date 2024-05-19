@@ -10,5 +10,6 @@ The repository has branches for each of the pertinent sections of the article de
 | --- | --- |
 | Setting Up | setting-up |
 | Simple UI | simple-ui |
-| Connecting | Events connecting-events |
-
+| Connecting Events | connecting-events |
+| Creating the Button Scene | creating-the-button-scene |
+| Creating Some Stars | creating-some-stars |
