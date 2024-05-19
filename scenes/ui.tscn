@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://u6j4da28frcn"]
+[gd_scene load_steps=3 format=3 uid="uid://u6j4da28frcn"]
 
 [ext_resource type="Script" path="res://scripts/ui.cs" id="1_r5xrv"]
+[ext_resource type="PackedScene" uid="uid://dcycn8yivc24i" path="res://scenes/star_button_panel.tscn" id="2_qhuxb"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -30,5 +31,8 @@ placeholder_text = "Type Here..."
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Click Me"
+
+[node name="Star Button Panel" parent="VBoxContainer" instance=ExtResource("2_qhuxb")]
+layout_mode = 2
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
