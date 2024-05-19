@@ -8,4 +8,9 @@ public partial class star_button : TextureButton {
     public override void _Ready() {
         SelfModulate = ButtonBaseColor;
     }
+    
+    private void _on_Button_pressed() {
+        var signalBus = GetNode<signal_bus>("/root/SignalBus");
+        signalBus.EmitSignal(signal_bus.SignalName.StarButtonPressed, Name);
+    }
 }
