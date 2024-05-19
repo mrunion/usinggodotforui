@@ -27,3 +27,5 @@ texture_disabled = ExtResource("4_wjbnw")
 texture_focused = ExtResource("5_6v6lu")
 texture_click_mask = SubResource("BitMap_gekpc")
 script = ExtResource("6_ckucg")
+
+[connection signal="pressed" from="." to="." method="_on_Button_pressed"]
