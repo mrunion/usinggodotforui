@@ -15,3 +15,10 @@ The repository has branches for each of the pertinent sections of the article de
 | Creating Some Stars | creating-some-stars |
 | Signaling Across Scenes | signaling-across-scenes |
 | Star Window | star-window |
+
+The source images for the article are included in the imagesources folder. These are not used in the Godot project directly, and Godot should ignore them because of the **.gdignore** file. The image assets were designed with Affinity Designer, and those source files are also available in the repository.
+
+Here is the final outcome of the entire artcile:
+
+![Star Shaped Window](./imagesources/finalappscreenshot.png?raw=true)
+
